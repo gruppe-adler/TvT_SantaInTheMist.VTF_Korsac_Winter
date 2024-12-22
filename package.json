@@ -1,0 +1,21 @@
+{
+    "name": "tvt-moneyinthemist",
+    "description": "A dynamic four-party-tvt mission for all maps.",
+    "version": "0.2.2",
+    "contributors": [
+        {
+            "name": "McDiod"
+        }
+    ],
+    "dependencies": {
+        "@gruppe-adler/replay": "^1.4.0",
+        "grad-fortifications": "^0.9.3",
+        "grad-gpstracker": ">=0.2.0",
+        "grad-islandconfig": "^0.2.5",
+        "grad-listbuymenu": "^0.8.0",
+        "grad-loadout": "^4.11.3",
+        "grad-scoreboard": ">=0.1.1",
+        "grad-tvtsettings": "0.0.1",
+        "grad-winratetracker": "0.0.2"
+    }
+}

@@ -1,0 +1,1 @@
+[player] remoteExecCall ["mitm_common_fnc_animDanceStart", 0];

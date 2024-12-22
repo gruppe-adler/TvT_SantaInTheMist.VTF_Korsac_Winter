@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Project name="TvT_MoneyInTheMist_project">
+	<Package name="TvT_MoneyInTheMist_package">
+		<Container name="template">
+			<Key ID="str_mitm_template">
+				<Original>
+					&lt;br/&gt;
+				</Original>
+			</Key>
+		</Container>
+		<Container name="tasks">
+			<Key ID="str_mitm_task_seize">
+				<Original>
+					Get the Briefcase under your control. Force the Courier to join your side (his ACE-Interaction) and escort him or just kill him and take the Briefcase. However killing him will increase the Briefcase's tracking frequency.&lt;br/&gt;
+					&lt;br/&gt;We will give you an exfil location once you have the briefcase.
+				</Original>
+			</Key>
+			<Key ID="str_mitm_task_seize_title">
+				<Original>
+					Seize Briefcase
+				</Original>
+			</Key>
+			<Key ID="str_mitm_task_exfil">
+				<Original>
+					You have the briefcase. Move to the exfil position and defend it until your pick up arrives.
+				</Original>
+			</Key>
+			<Key ID="str_mitm_task_exfil_title">
+				<Original>
+					Exfil
+				</Original>
+			</Key>
+			<Key ID="str_mitm_task_prevent">
+				<Original>
+					The enemy has the briefcase. Prevent their exfil.
+				</Original>
+			</Key>
+			<Key ID="str_mitm_task_prvent_title">
+				<Original>
+					Prevent Exfil
+				</Original>
+			</Key>
+
+		</Container>
+	</Package>
+</Project>

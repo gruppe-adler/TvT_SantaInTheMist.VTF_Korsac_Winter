@@ -1,0 +1,4 @@
+params ["_unit"];
+
+_unit setVariable ["mitm_animationRunning", false];
+_unit switchMove "";

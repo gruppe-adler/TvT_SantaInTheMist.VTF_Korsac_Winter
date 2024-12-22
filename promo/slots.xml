@@ -1,0 +1,79 @@
+<company side="civilian" callsign="Courier">
+    <slot shortcode="COU" description="Courier"></slot>
+    <slot shortcode="COA" description="Courier's Assistant" reserved-for="30+"></slot>
+</company>
+<company side="blufor" callsign="Special Forces">
+    <squad>
+        <slot shortcode="SQL" description="Squad Leader"></slot>
+        <slot shortcode="SQA" description="Ass. Squad Leader"></slot>
+        <slot shortcode="SQM" description="Squad Medic"></slot>
+        <fireteam>
+            <slot shortcode="FTL" description="Team Leader"></slot>
+            <slot shortcode="AR" description="Autorifleman"></slot>
+            <slot shortcode="AAR" description="Ass. Autorifleman"></slot>
+            <slot shortcode="RFL" description="Rifleman"></slot>
+        </fireteam>
+        <fireteam>
+            <slot shortcode="FTL" description="Team Leader"></slot>
+            <slot shortcode="AT" description="Rifleman (AT)"></slot>
+            <slot shortcode="AT" description="Rifleman (AT)"></slot>
+            <slot shortcode="RFL" description="Rifleman"></slot>
+        </fireteam>
+        <fireteam>
+            <slot shortcode="FTL" description="Team Leader"></slot>
+            <slot shortcode="RFL" description="Rifleman"></slot>
+            <slot shortcode="RFL" description="Rifleman"></slot>
+            <slot shortcode="RFL" description="Rifleman"></slot>
+        </fireteam>
+    </squad>
+</company>
+<company side="opfor" callsign="Mafia">
+    <squad>
+        <slot shortcode="SQL" description="Squad Leader"></slot>
+        <slot shortcode="SQA" description="Ass. Squad Leader"></slot>
+        <slot shortcode="SQM" description="Squad Medic"></slot>
+        <fireteam>
+            <slot shortcode="FTL" description="Team Leader"></slot>
+            <slot shortcode="AR" description="Autorifleman"></slot>
+            <slot shortcode="AAR" description="Ass. Autorifleman"></slot>
+            <slot shortcode="RFL" description="Rifleman"></slot>
+        </fireteam>
+        <fireteam>
+            <slot shortcode="FTL" description="Team Leader"></slot>
+            <slot shortcode="AT" description="Rifleman (AT)"></slot>
+            <slot shortcode="AT" description="Rifleman (AT)"></slot>
+            <slot shortcode="RFL" description="Rifleman"></slot>
+        </fireteam>
+        <fireteam>
+            <slot shortcode="FTL" description="Team Leader"></slot>
+            <slot shortcode="RFL" description="Rifleman"></slot>
+            <slot shortcode="RFL" description="Rifleman"></slot>
+            <slot shortcode="RFL" description="Rifleman"></slot>
+        </fireteam>
+    </squad>
+</company>
+<company side="independent" callsign="Rebels">
+    <squad>
+        <slot shortcode="SQL" description="Squad Leader"></slot>
+        <slot shortcode="SQA" description="Ass. Squad Leader"></slot>
+        <slot shortcode="SQM" description="Squad Medic"></slot>
+        <fireteam>
+            <slot shortcode="FTL" description="Team Leader"></slot>
+            <slot shortcode="AR" description="Autorifleman"></slot>
+            <slot shortcode="AAR" description="Ass. Autorifleman"></slot>
+            <slot shortcode="RFL" description="Rifleman"></slot>
+        </fireteam>
+        <fireteam>
+            <slot shortcode="FTL" description="Team Leader"></slot>
+            <slot shortcode="AT" description="Rifleman (AT)"></slot>
+            <slot shortcode="AT" description="Rifleman (AT)"></slot>
+            <slot shortcode="RFL" description="Rifleman"></slot>
+        </fireteam>
+        <fireteam>
+            <slot shortcode="FTL" description="Team Leader"></slot>
+            <slot shortcode="RFL" description="Rifleman"></slot>
+            <slot shortcode="RFL" description="Rifleman"></slot>
+            <slot shortcode="RFL" description="Rifleman"></slot>
+        </fireteam>
+    </squad>
+</company>
