@@ -12,5 +12,6 @@ class mitm_courierTasks {
         class spawnCiv {};
         class spawnCivStaticVehicle {};
         class createParticlesLocal {};
+        class createParticlesLocalTaunt {};
     };
 };

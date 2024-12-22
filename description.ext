@@ -87,7 +87,36 @@ class GRAD_Replay {
 
 //SOUNDS =======================================================================
 class CfgSounds {
-
+    class ho1
+    {
+        name = "ho 1";						// display name
+		sound[] = { "data\ho1.ogg", 1, 1, 100 };	// file, volume, pitch, maxDistance
+		titles[] = { 0, "" };
+    };
+    class ho2
+    {
+        name = "ho 2";						// display name
+		sound[] = { "data\ho2.ogg", 1, 1, 100 };	// file, volume, pitch, maxDistance
+		titles[] = { 0, "" };
+    };
+    class ho3
+    {
+        name = "ho 3";						// display name
+		sound[] = { "data\ho3.ogg", 1, 1, 100 };	// file, volume, pitch, maxDistance
+		titles[] = { 0, "" };
+    };
+    class ho4
+    {
+        name = "ho 41";						// display name
+		sound[] = { "data\ho4.ogg", 1, 1, 100 };	// file, volume, pitch, maxDistance
+		titles[] = { 0, "" };
+    };
+    class hoend
+    {
+        name = "ho end";						// display name
+		sound[] = { "data\hoend.ogg", 1, 1, 100 };	// file, volume, pitch, maxDistance
+		titles[] = { 0, "" };
+    };
 };
 
 //WEAPONS THAT CAN HAVE MAGNIFYING SCOPES ======================================

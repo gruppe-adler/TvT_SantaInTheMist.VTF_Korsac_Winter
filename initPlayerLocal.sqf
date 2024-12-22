@@ -11,6 +11,19 @@ player addEventHandler ["HandleRating",{0}];
 player setVariable ["tf_receivingDistanceMultiplicator", 1];
 player setVariable ["tf_sendingDistanceMultiplicator", 1];
 
+// SACK OWNER action, drops marker instantly but spawns some packages
+player addAction [
+    "<t color='#FF0000'>Spawn gifts + broadcast position</t>", 
+    "functions\courierTasks\fn_tauntPosition.sqf",
+    nil,
+    0,
+    false,
+    true,
+    "",
+    "(_this) getVariable ['mitm_briefcase_hasBriefcase',false]"
+];
+
+
 
 // CUSTOM ANIMATIONS
 if ((side player) == east) then {

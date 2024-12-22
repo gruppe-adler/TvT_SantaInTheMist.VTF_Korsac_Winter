@@ -12,10 +12,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={6225.6621,874.3952,4628.9258};
-		dir[]={0.71860534,-0.42495251,0.55051208};
-		up[]={0.33735237,0.90521181,0.258439};
-		aside[]={0.60815227,-1.0163058e-07,-0.79384798};
+		pos[]={6281.3062,855.53491,4660.4844};
+		dir[]={0.35791287,-0.5378896,-0.76329786};
+		up[]={0.22836521,0.84300894,-0.4870224};
+		aside[]={-0.905433,1.1756492e-07,-0.42455876};
 	};
 };
 binarizationWanted=0;
@@ -7327,7 +7327,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={3739.9976,879.38947,4724.1367};
-				angles[]={-0,0.45311639,0};
+				angles[]={0,0.45311639,0};
 			};
 			side="Empty";
 			flags=4;
@@ -7363,7 +7363,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={4186.4424,824.81763,1962.093};
-				angles[]={-0,3.1716297,-0};
+				angles[]={0,3.1716297,0};
 			};
 			side="Empty";
 			class Attributes
@@ -8969,6 +8969,7 @@ class Mission
 			};
 			id=245;
 			type="UK3CB_ADC_C_Landcruiser";
+			atlOffset=-0.0014648438;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -9126,7 +9127,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={3733.6633,879.91736,4725.6782};
-				angles[]={0,6.2684259,-0};
+				angles[]={0,6.2684259,0};
 			};
 			side="Empty";
 			flags=5;
