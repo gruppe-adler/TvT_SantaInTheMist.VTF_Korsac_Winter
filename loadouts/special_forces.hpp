@@ -22,7 +22,7 @@ class special_forces_w {
         compass = "ItemCompass";
         watch = "ItemWatch";
         gps = "ItemGPS";
-        radio = "tfar_anprc154";
+        radio = "tfar_anprc148";
         nvgoggles = "";
         addItemsToUniform[] = {
             

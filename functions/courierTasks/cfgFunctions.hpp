@@ -11,5 +11,6 @@ class mitm_courierTasks {
         class onDeadDropDeliveryComplete {};
         class spawnCiv {};
         class spawnCivStaticVehicle {};
+        class createParticlesLocal {};
     };
 };

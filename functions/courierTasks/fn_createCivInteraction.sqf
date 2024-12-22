@@ -27,13 +27,13 @@ private _action = ["mitm_courierTasks_deliver","MODIFIED TEXT","",{
         };
 
         [_civ] remoteExec ["mitm_courierTasks_fnc_onCivDeliveryComplete",2,false];
-        hint selectRandom [
+        selectRandom [
             "Better him than me.",
             "I guess he won't be needing his delivery anymore.",
             "I'll just keep the package then.",
             "Risky business, this.",
             "Good thing I wasn't here sooner"
-        ];
+        ] call CBA_fnc_notify;
     };
 
     _onComplete = {
@@ -48,7 +48,20 @@ private _action = ["mitm_courierTasks_deliver","MODIFIED TEXT","",{
         hint "canceled handing over";
     };
 
-    [_interactionTime, [_civ,_caller], _onComplete, _onCancel, "Doing business..."] call ace_common_fnc_progressBar;
+    _eachFrame = {
+        params ["_args", "_elapsedTime", "_totalTime", "_errorCode"];
+    
+        if (floor _elapsedTime % 1 == 0) then {
+            diag_log format ["One second of particle spawn has passed. Elapsed: %1 seconds", _elapsedTime];
+
+            [getPosASL player] remoteExec ["mitm_courierTasks_fnc_createParticlesLocal"];
+        };
+        
+        // Return true to keep the interaction running
+        true
+    };
+
+    [_interactionTime, [_civ,_caller], _onComplete, _onCancel, "Doing business...", _eachFrame] call ace_common_fnc_progressBar;
 
 },mitm_courierTasks_fnc_canInteractWithTaskObject,{},_interactionTime,[0,0,0],4,[false,false,false,false,true],_modifier] call ace_interact_menu_fnc_createAction;
 

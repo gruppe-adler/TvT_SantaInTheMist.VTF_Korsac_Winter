@@ -156,7 +156,7 @@ class CfgSFX
     {
         name = "music1";
         sounds[]={sfxsound};
-        sfxsound[]={"data\alliwant.ogg",2,1,150,1,1,1,1};
+        sfxsound[]={"data\ai_1.ogg",2,1,150,1,1,1,1};
         empty[]= {"",0,0,0,0,0,0,0};
     };
 
@@ -165,7 +165,7 @@ class CfgSFX
     {
         name = "music2";
         sounds[]={sfxsound};
-        sfxsound[]={"data\jb.ogg",2,1,150,1,1,1,1};
+        sfxsound[]={"data\ai_2.ogg",2,1,150,1,1,1,1};
         empty[]= {"",0,0,0,0,0,0,0};
     };
 
@@ -174,7 +174,7 @@ class CfgSFX
     {
         name = "music3";
         sounds[]={sfxsound};
-        sfxsound[]={"data\juljul2.ogg",2,1,150,1,1,1,1};
+        sfxsound[]={"data\ai_3.ogg",2,1,150,1,1,1,1};
         empty[]= {"",0,0,0,0,0,0,0};
     };
 
@@ -183,7 +183,7 @@ class CfgSFX
     {
         name = "music4";
         sounds[]={sfxsound};
-        sfxsound[]={"data\lastchr.ogg",2,1,150,1,1,1,1};
+        sfxsound[]={"data\ai_4.ogg",2,1,150,1,1,1,1};
         empty[]= {"",0,0,0,0,0,0,0};
     };
 
@@ -192,7 +192,7 @@ class CfgSFX
     {
         name = "music5";
         sounds[]={sfxsound};
-        sfxsound[]={"data\ohdu.ogg",2,1,150,1,1,1,1};
+        sfxsound[]={"data\ai_5.ogg",2,1,150,1,1,1,1};
         empty[]= {"",0,0,0,0,0,0,0};
     };
 
@@ -201,7 +201,7 @@ class CfgSFX
     {
         name = "music6";
         sounds[]={sfxsound};
-        sfxsound[]={"data\santababy2.ogg",2,1,150,1,1,1,1};
+        sfxsound[]={"data\ai_6.ogg",2,1,150,1,1,1,1};
         empty[]= {"",0,0,0,0,0,0,0};
     };
 
@@ -210,7 +210,7 @@ class CfgSFX
     {
         name = "music7";
         sounds[]={sfxsound};
-        sfxsound[]={"data\warover.ogg",2,1,150,1,1,1,1};
+        sfxsound[]={"data\ai_7.ogg",2,1,150,1,1,1,1};
         empty[]= {"",0,0,0,0,0,0,0};
     };
 };
