@@ -11,17 +11,45 @@ player addEventHandler ["HandleRating",{0}];
 player setVariable ["tf_receivingDistanceMultiplicator", 1];
 player setVariable ["tf_sendingDistanceMultiplicator", 1];
 
-// SACK OWNER action, drops marker instantly but spawns some packages
-player addAction [
-    "<t color='#FF0000'>Spawn gifts + broadcast position</t>", 
-    "functions\courierTasks\fn_tauntPosition.sqf",
-    nil,
-    0,
-    false,
-    true,
-    "",
-    "(_this) getVariable ['mitm_briefcase_hasBriefcase',false]"
-];
+[{
+    time > 3
+},{
+    // SACK OWNER action, drops marker instantly but spawns some packages
+    // not exactly sure why this needs to be delayed, probably some init fuckup
+    private _sackActionId = player addAction [
+        "<t color='#FF0000'>Spawn gifts + broadcast position</t>", 
+        "functions\courierTasks\fn_tauntPosition.sqf",
+        nil,
+        0,
+        false,
+        true,
+        "",
+        "(_this) getVariable ['mitm_briefcase_hasBriefcase',false]"
+    ];
+
+    [{
+        params ["_args", "_handle"];
+        _args params ["_sackActionId"];
+
+        diag_log format ["sackActionId: %1", _sackActionId];
+
+        private _coolDownValue = player getVariable ["tauntCooldownValue", -1];
+        private _textCooldown = format ["Cooldown... %1 s", _coolDownValue];
+        private _defaultText = "Spawn gifts + broadcast position";
+
+        private _coolDown = if (_coolDownValue == -1) then {
+            player setUserActionText [_sackActionId, _defaultText];
+        } else {
+            player setUserActionText [_sackActionId, _textCooldown];
+        };
+
+        if (!alive player) exitWith { 
+            [_handle] call CBA_fnc_removePerFrameHandler; 
+        };
+        
+    }, 0.5, [_sackActionId]] call CBA_fnc_addPerFrameHandler;
+
+},[]] call CBA_fnc_waitUntilAndExecute;
 
 
 

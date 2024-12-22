@@ -5,6 +5,6 @@
 ["Initialize", [true]] call BIS_fnc_dynamicGroups;
 
 // manually overriding weather
-0 setFog 0.8;
+0 setFog 0.5;
 
 0 setRain 0;

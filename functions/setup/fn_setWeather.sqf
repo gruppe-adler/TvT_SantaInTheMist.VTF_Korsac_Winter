@@ -35,4 +35,4 @@ if (otf_missionParam_TIMEOFDAY <= 8) then {
 
 _fog = random [0,_mid,0.4];
 
-0 setFog 0.8; // _fog;
+0 setFog 0.3; // _fog;

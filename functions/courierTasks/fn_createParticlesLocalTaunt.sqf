@@ -2,41 +2,29 @@ params ["_player"];
 
 private _positionASL = getPosASL _player;
 
-private _ho = selectRandom ["ho1", "ho2", "ho3", "ho4"];
-private _sound = _player say3d _ho;
+private _ho1 = selectRandom ["inthehole1", "inthehole2", "inthehole3", "inthehole4"];
+private _sound = _player say3d [_ho1, 500, 1];
 
 [{
 	params ["_sound", "_player"];
-	isNull _sound || !alive _player
+	isNull _sound
 },{
 	params ["_sound", "_player"];
 
-	private _ho2 = "hoend";
-	_player say3d _ho2;
+	private _ho2 = selectRandom ["ho1", "ho2", "ho3", "ho4"];
+	private _sound2 = _player say3d [_ho2, 500, 1];
+	[{
+		params ["_sound2", "_player"];
+		isNull _sound2
+	},{
+		params ["_sound2", "_player"];
+
+		if (alive _player) then {
+			private _ho3 = "hoend";
+			_player say3d [_ho3, 500, 1];
+		};
+
+	}, [_sound2, _player]] call CBA_fnc_waitUntilAndExecute;
 
 }, [_sound, _player]] call CBA_fnc_waitUntilAndExecute;
 
-
-private _particlesSources = [];
-{
-	private _positionAGL = ASLToAGL _positionASL;
-	private _particleSource = "#particlesource" createVehicleLocal _positionAGL;
-	private _type = _x;
-	// _particleSource attachTo [_vehicle, [0,0,0]];
-	_particleSource setParticleCircle [0, [0, 0, 0]];  
-	_particleSource setParticleRandom [0, [1, 1, 0], [2, 2, 2.35], 0, 0, [0, 0, 0, 0.1], 0, 0];  
-	_particleSource setParticleParams [
-		[_type, 1, 0, 1], "", "SpaceObject", 0.5, 3, 
-		[0, 0, 0.3], [0, 0, (random 10) max 5], 0.5, 200, 0.2, 0.075, [1, 1, 1], [[0.3, 0.3, 0.3, 1], [0.3, 0.3, 0.3, 0.3], [0.3, 0.3, 0.3, 0]], 
-		[0.08], 1, 0, "", "", _this,0,true,0.2
-	];  
-	_particleSource setDropInterval 0.1; 
-	_particlesSources pushBackUnique _particleSource;
-} forEach [
-	selectRandom ["\xmas\weapons_xmas\present.p3d", "\xmas\weapons_xmas\present_2.p3d"]
-];
-
-[{
-	params ["_particlesSources"];
-	{ deleteVehicle _x; } forEach _particlesSources;
-}, [_particlesSources], 0.7] call CBA_fnc_waitAndExecute;

@@ -117,6 +117,30 @@ class CfgSounds {
 		sound[] = { "data\hoend.ogg", 1, 1, 100 };	// file, volume, pitch, maxDistance
 		titles[] = { 0, "" };
     };
+    class inthehole1
+    {
+        name = "inthehole1";						// display name
+		sound[] = { "data\inthehole1.ogg", 3, 1, 100 };	// file, volume, pitch, maxDistance
+		titles[] = { 0, "" };
+    };
+    class inthehole2
+    {
+        name = "inthehole2";						// display name
+		sound[] = { "data\inthehole2.ogg", 3, 1, 100 };	// file, volume, pitch, maxDistance
+		titles[] = { 0, "" };
+    };
+    class inthehole3
+    {
+        name = "inthehole3";						// display name
+		sound[] = { "data\inthehole3.ogg", 3, 1, 100 };	// file, volume, pitch, maxDistance
+		titles[] = { 0, "" };
+    };
+    class inthehole4
+    {
+        name = "inthehole4";						// display name
+		sound[] = { "data\inthehole4.ogg", 3, 1, 100 };	// file, volume, pitch, maxDistance
+		titles[] = { 0, "" };
+    };
 };
 
 //WEAPONS THAT CAN HAVE MAGNIFYING SCOPES ======================================

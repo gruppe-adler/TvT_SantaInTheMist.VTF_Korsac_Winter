@@ -23,7 +23,7 @@ _briefcase setVariable ["mitm_briefcase_currentInterval",_intervalMin + (random 
 
     if (isNull _briefcase) exitWith {[_handle] call CBA_fnc_removePerFrameHandler};
 
-    _currentInterval = _briefcase getVariable ["mitm_briefcase_currentInterval",_intervalMin];;
+    _currentInterval = _briefcase getVariable ["mitm_briefcase_currentInterval",_intervalMin];
     _currentAccuracy = _accuracy;
 
     _owner = _briefcase getVariable ["mitm_briefcase_owner",objNull];
@@ -67,6 +67,6 @@ _briefcase setVariable ["mitm_briefcase_currentInterval",_intervalMin + (random 
     _trackingMarkerFadeout = _trackingMarkerFadeout - (_intervalMin - _currentInterval);
     [[_centerMarker,_areaMarker],_trackingMarkerFadeout] call mitm_common_fnc_fadeMarker;
 
-},5,[_briefcase,_accuracy,_accuracyFactorNoCourier,_accuracyFactorVehicle,_accuracyFactorNoCarrier,_intervalMin,_intervalRandom,_intervalFactorNoCourier,_intervalFactorVehicle,_intervalFactorNoCarrier,_trackingMarkerFadeout]] call CBA_fnc_addPerFrameHandler;
+},1,[_briefcase,_accuracy,_accuracyFactorNoCourier,_accuracyFactorVehicle,_accuracyFactorNoCarrier,_intervalMin,_intervalRandom,_intervalFactorNoCourier,_intervalFactorVehicle,_intervalFactorNoCarrier,_trackingMarkerFadeout]] call CBA_fnc_addPerFrameHandler;
 
 _briefcase setVariable ["mitm_briefcaseMarker_running",true];
