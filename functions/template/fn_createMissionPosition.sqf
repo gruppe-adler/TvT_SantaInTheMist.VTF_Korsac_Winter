@@ -21,6 +21,8 @@ if (_isLastPosition) then {
     reverse MITM_MISSIONPOSITIONSDATA;
 };
 
+diag_log format ["position created: %1 - %2 - %3", getPos _gameLogic,_type,_taskObject];
+
 if (count MITM_MISSIONPOSITIONSDATA == 7) then {
     publicVariable "MITM_MISSIONPOSITIONSDATA";
 
