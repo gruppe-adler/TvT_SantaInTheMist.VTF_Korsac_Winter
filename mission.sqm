@@ -8,14 +8,14 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=190;
+		nextID=210;
 	};
 	class Camera
 	{
-		pos[]={6737.4634,879.39447,3358.2617};
-		dir[]={0.73111564,-0.45642805,0.5071075};
-		up[]={0.37504879,0.88975686,0.26013681};
-		aside[]={0.56993651,-7.6368451e-08,-0.82169926};
+		pos[]={4728.0928,860.315,3479.7373};
+		dir[]={-0.53743523,-0.50532812,-0.67514431};
+		up[]={-0.31472182,0.8629235,-0.39536393};
+		aside[]={-0.78238809,-3.0625961e-07,0.62280571};
 	};
 };
 binarizationWanted=0;
@@ -67,13 +67,14 @@ addons[]=
 	"A3_Boat_F_Exp_Boat_Transport_02",
 	"xakuda_f_xs_Snowmobile",
 	"A3_Data_F_Exp_A_Virtual",
-	"A3_Data_F_Curator_Virtual"
+	"A3_Data_F_Curator_Virtual",
+	"gm_core_objects"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=38;
+		items=39;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -330,6 +331,13 @@ class AddonsMetaData
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
+		class Item38
+		{
+			className="gm_core_objects";
+			name="gm_core_objects";
+			author="Global Mobilization";
+			url="global-mobilization.com";
+		};
 	};
 };
 dlcs[]=
@@ -397,7 +405,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=123;
+		items=133;
 		class Item0
 		{
 			dataType="Marker";
@@ -5852,7 +5860,7 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={5104.0708,866.27002,6669.4307};
+				position[]={5679.3633,875.97998,6061.5645};
 			};
 			name="missionPos_2";
 			init="call{[this, false, ""CIV""] call mitm_template_fnc_createMissionPosition;}";
@@ -5864,8 +5872,8 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={675.11646,832.07001,5696.7163};
-				angles[]={0,3.9222186,0};
+				position[]={4344.0698,872.16144,5874.5742};
+				angles[]={-0,3.9222186,0};
 			};
 			name="missionPos_1";
 			init="call{[this, false, ""CIV""] call mitm_template_fnc_createMissionPosition;}";
@@ -5877,52 +5885,51 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={1505.9736,838.4436,2733.2212};
+				position[]={3764.7441,879.91583,4684.1201};
 			};
 			name="missionPos_3";
 			init="call{[this, false, ""CIV""] call mitm_template_fnc_createMissionPosition;}";
 			id=90;
 			type="Logic";
-			atlOffset=6.1035156e-05;
 		};
 		class Item32
 		{
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={4262.6509,824.82355,1980.6764};
+				position[]={4259.0693,827.94202,1980.1305};
+				angles[]={6.2802153,0,0.001035801};
 			};
 			name="missionPos_4";
 			init="call{[this, false, ""CIV""] call mitm_template_fnc_createMissionPosition;}";
 			id=91;
 			type="Logic";
+			atlOffset=3.1184692;
 		};
 		class Item33
 		{
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={7401.4189,831.89301,6315.0669};
-				angles[]={0,0,6.278182};
+				position[]={6260.6841,850.56317,4648.6519};
 			};
 			name="missionPos_5";
 			init="call{[this, false, ""CIV""] call mitm_template_fnc_createMissionPosition;}";
 			id=92;
 			type="Logic";
-			atlOffset=6.1035156e-05;
 		};
 		class Item34
 		{
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={6723.8071,838.12366,3361.5488};
+				position[]={4740.9966,833.89441,3461.4321};
 			};
 			name="missionPos_7";
 			init="call{[this, false] call mitm_template_fnc_createMissionPosition;}";
 			id=93;
 			type="Logic";
-			atlOffset=0.71044922;
+			atlOffset=0.69799805;
 		};
 		class Item35
 		{
@@ -7016,10 +7023,9 @@ class Mission
 			dataType="Comment";
 			class PositionInfo
 			{
-				position[]={5136.8911,867.35754,6731.646};
-				angles[]={6.188468,0,0.034989785};
+				position[]={5700.9971,875.27002,6091.7764};
 			};
-			title="pos 2";
+			title="mission_2";
 			id=116;
 		};
 		class Item58
@@ -7027,10 +7033,10 @@ class Mission
 			dataType="Comment";
 			class PositionInfo
 			{
-				position[]={7463.7959,831.30103,6352.2134};
-				angles[]={0,0,6.278182};
+				position[]={6305.7749,847.21619,4695.3965};
+				angles[]={0.044984013,0,6.2431974};
 			};
-			title="5";
+			title="mission_5";
 			id=117;
 		};
 		class Item59
@@ -7088,8 +7094,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={6725.4297,837.40674,3362.9771};
-				angles[]={0.0049675321,3.1716297,6.2782178};
+				position[]={4740.9326,833.19617,3462.1375};
+				angles[]={0,2.1203742,0};
 			};
 			side="Empty";
 			flags=4;
@@ -7100,7 +7106,6 @@ class Mission
 			};
 			id=122;
 			type="land_gm_euro_furniture_radio_01";
-			atlOffset=-0.00085449219;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -7198,12 +7203,13 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={5791.3623,839.22998,1545.5754};
+				position[]={5784.4053,848.14655,1548.1772};
 			};
 			name="missionPos_6";
 			init="call{[this, false, ""CIV""] call mitm_template_fnc_createMissionPosition;}";
 			id=128;
 			type="Logic";
+			atlOffset=4.0151978;
 		};
 		class Item69
 		{
@@ -7278,8 +7284,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={675.48425,832.06842,5697.3999};
-				angles[]={0,3.1716297,0};
+				position[]={4344.438,872.16113,5875.2578};
+				angles[]={-0,3.1716297,0};
 			};
 			side="Empty";
 			flags=4;
@@ -7290,7 +7296,6 @@ class Mission
 			};
 			id=132;
 			type="land_gm_euro_furniture_radio_01";
-			atlOffset=-0.0012817383;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -7314,8 +7319,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={5098.8608,866.27356,6666.6597};
-				angles[]={0,3.1716297,0};
+				position[]={5677.5371,875.97968,6059.3096};
+				angles[]={0,3.1716297,-0};
 			};
 			side="Empty";
 			flags=4;
@@ -7326,7 +7331,6 @@ class Mission
 			};
 			id=133;
 			type="land_gm_euro_furniture_radio_01";
-			atlOffset=0.0038452148;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -7350,7 +7354,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={1506.3597,838.4436,2734.0728};
+				position[]={3764.1294,879.91553,4684.7813};
 				angles[]={0,3.1716297,0};
 			};
 			side="Empty";
@@ -7362,7 +7366,7 @@ class Mission
 			};
 			id=134;
 			type="land_gm_euro_furniture_radio_01";
-			atlOffset=0.00036621094;
+			atlOffset=0.00018310547;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -7386,8 +7390,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={4262.7856,824.82611,1980.7032};
-				angles[]={0,3.1716297,0};
+				position[]={4259.2041,827.94458,1980.1573};
+				angles[]={6.2802153,3.1716297,0.001035801};
 			};
 			side="Empty";
 			flags=4;
@@ -7398,7 +7402,6 @@ class Mission
 			};
 			id=135;
 			type="land_gm_euro_furniture_radio_01";
-			atlOffset=0.0028686523;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -7422,8 +7425,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={7401.4487,831.89526,6315.7803};
-				angles[]={0,3.1716297,6.278182};
+				position[]={6260.7139,850.56293,4649.3652};
+				angles[]={-0,3.1716297,0};
 			};
 			side="Empty";
 			flags=4;
@@ -7434,7 +7437,6 @@ class Mission
 			};
 			id=136;
 			type="land_gm_euro_furniture_radio_01";
-			atlOffset=0.0028076172;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -7458,7 +7460,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={5791.7759,839.23004,1546.3164};
+				position[]={5784.8188,848.14661,1548.9182};
 				angles[]={0,3.1716297,0};
 			};
 			side="Empty";
@@ -7470,7 +7472,6 @@ class Mission
 			};
 			id=137;
 			type="land_gm_euro_furniture_radio_01";
-			atlOffset=0.00036621094;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -8104,8 +8105,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={7411.6445,831.96698,6319.6582};
-				angles[]={0,2.6646457,6.2782178};
+				position[]={6253.6235,850.50549,4662.8418};
+				angles[]={-0,2.6646457,0};
 			};
 			side="Empty";
 			flags=4;
@@ -8114,7 +8115,6 @@ class Mission
 			};
 			id=177;
 			type="xs_Snowmobile_white";
-			atlOffset=-0.00042724609;
 		};
 		class Item114
 		{
@@ -8559,6 +8559,203 @@ class Mission
 			};
 			title="exfil opf";
 			id=186;
+		};
+		class Item123
+		{
+			dataType="Comment";
+			class PositionInfo
+			{
+				position[]={4341.3418,872.04999,5868.958};
+			};
+			title="mission_1";
+			id=190;
+		};
+		class Item124
+		{
+			dataType="Comment";
+			class PositionInfo
+			{
+				position[]={3763.3101,879.38,4702.959};
+			};
+			title="mission_3";
+			id=191;
+		};
+		class Item125
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={3764.896,880.10187,4692.6299};
+			};
+			areaSize[]={50,-1,50};
+			flags=1;
+			id=192;
+			type="gm_moduleFurniture";
+			atlOffset=0.00030517578;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="gm_furnitureFillLevel";
+					expression="_this setVariable ['gm_furnitureFillLevel',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=0.75;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item126
+		{
+			dataType="Comment";
+			class PositionInfo
+			{
+				position[]={4261.7441,824.51001,1967.179};
+			};
+			title="mission_4";
+			id=193;
+		};
+		class Item127
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={4261.2578,827.96106,1980.0387};
+			};
+			areaSize[]={50,-1,50};
+			flags=1;
+			id=194;
+			type="gm_moduleFurniture";
+			atlOffset=0.014465332;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="gm_furnitureFillLevel";
+					expression="_this setVariable ['gm_furnitureFillLevel',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=0.75;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item128
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={6258.1592,850.56317,4647.645};
+			};
+			areaSize[]={50,-1,50};
+			flags=1;
+			id=195;
+			type="gm_moduleFurniture";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="gm_furnitureFillLevel";
+					expression="_this setVariable ['gm_furnitureFillLevel',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=0.75;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item129
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={5786.6211,848.14691,1547.3423};
+			};
+			areaSize[]={50,-1,50};
+			flags=1;
+			id=196;
+			type="gm_moduleFurniture";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="gm_furnitureFillLevel";
+					expression="_this setVariable ['gm_furnitureFillLevel',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=0.75;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item130
+		{
+			dataType="Comment";
+			class PositionInfo
+			{
+				position[]={5785.7642,839.22998,1543.052};
+			};
+			title="mission_6";
+			id=197;
+		};
+		class Item131
+		{
+			dataType="Comment";
+			class PositionInfo
+			{
+				position[]={4754.0195,832.72998,3455.499};
+			};
+			title="mission_7";
+			id=198;
+		};
+		class Item132
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={4741.7773,833.19641,3462.333};
+			};
+			areaSize[]={50,-1,50};
+			flags=1;
+			id=199;
+			type="gm_moduleFurniture";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="gm_furnitureFillLevel";
+					expression="_this setVariable ['gm_furnitureFillLevel',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=0.75;
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 	};
 	class Connections

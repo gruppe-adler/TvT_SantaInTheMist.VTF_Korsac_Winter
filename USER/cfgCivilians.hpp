@@ -64,8 +64,7 @@ class cfgCivilians {
 
         vehicles[] = {
             "gm_gc_civ_p601",
-            "vn_c_wheeled_m151_02",
-            "vn_c_bicycle_01"
+            "xs_Snowmobile_combat"
         };
     };
 
@@ -127,10 +126,9 @@ class cfgCivilians {
             ""
         };
 
-        vehicles[] = {
+         vehicles[] = {
             "gm_gc_civ_p601",
-            "vn_c_wheeled_m151_02",
-            "vn_c_bicycle_01"
+            "xs_Snowmobile_combat"
         };
     };
 
@@ -173,10 +171,9 @@ class cfgCivilians {
             "rhs_sidor"
         };
 
-        vehicles[] = {
+         vehicles[] = {
             "gm_gc_civ_p601",
-            "vn_c_wheeled_m151_02",
-            "vn_c_bicycle_01"
+            "xs_Snowmobile_combat"
         };
     };
 
@@ -249,8 +246,7 @@ class cfgCivilians {
 
         vehicles[] = {
             "gm_gc_civ_p601",
-            "vn_c_wheeled_m151_02",
-            "vn_c_bicycle_01"
+            "xs_Snowmobile_combat"
         };
     };
 };
