@@ -3,7 +3,7 @@
 if (player getvariable ["tauntCooldown", false]) exitWith {};
 if (isNull (missionNamespace getVariable ["mitm_briefcase",objNull])) exitWith {};
 
-[player] remoteExec ["mitm_courierTasks_fnc_createParticlesLocalTaunt"];
+[player] remoteExec ["mitm_courierTasks_fnc_createParticlesLocalTaunt", 0];
 
 private _briefcase = missionNamespace getVariable ["mitm_briefcase",objNull];
 private _currentInterval = _briefcase getVariable ["mitm_briefcase_currentInterval", 0]; 
